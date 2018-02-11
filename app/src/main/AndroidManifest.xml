@@ -16,6 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".BasicActivity"
+            android:label="@string/title_activity_basic"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name=".data.TaskContentProvider"
+            android:authorities="com.example.android.todolist"
+            android:exported="false" />
+
+        <activity android:name=".AddTaskActivity"></activity>
     </application>
 
 </manifest>
